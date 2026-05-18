@@ -1,3 +1,8 @@
-const express = require('express')
+const http = require('http')
+const fs = require('fs')
 
-module.exports
+const myServer = http.createServer((req, res) => {   
+    res.end("Hello from server again")   
+})
+
+myServer.listen(8000, () => console.log("server is running"))
